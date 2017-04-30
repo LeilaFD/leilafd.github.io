@@ -1,0 +1,50 @@
+/*
+	gris foncé: #606060;
+	gris clair : #A0A0A0;
+	gris tres clair :#E0E0E0;
+	vert : #009900;
+	vert tres clair:#DBEEDB;
+	framboise: #CC0066;
+	marron:#996633;
+*/
+
+
+/********************* main ************************/
+#cont_main{
+	max-width: 750px;
+	margin-left: 15%;
+	padding-left: 3%;
+	padding-right: 3%;
+	border-left: 1px #E0E0E0 solid;
+	margin-bottom: 50px;
+}
+
+h1, h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+main p{
+	text-align: justify;
+	font-size: 1em;
+	color: #606060;
+	margin-left: 4%;
+	
+}
+
+/******************** responsive ********************/
+
+@media all and (max-width: 930px){
+	#cont_main{
+		margin-left: 7%;
+	}
+}
+
+@media all and (max-width: 750px){
+	#cont_main{
+		margin-left: 5%;
+		padding-left: 0;
+		padding-right: 3%;
+		border-left: none;
+	}
+}

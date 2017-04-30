@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="stylesheet" href="../css/panier.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet"> <!-- police "Joliflor" -->
+    <title> Mon panier </title>
+  </head>
+  <body>
+  <div id = "cont_body">
+    <header>
+      <div id = "cont_head">
+          <div class = "elt"><a href="../index.html"> <span id="nom_enseigne">Joliflor</span></a> UN PAS <span id="jeu_mot">VERS</span> LA NATURE </div>
+          <div class = "elt"><img src="../src/images/avatar.png" alt="avatar" /><br/> Mon compte </div>
+          <a href="./panier.html"><div class = "elt"><img src="../src/images/shop.png" alt="panier" /><br/> Mon panier </div></a>
+        </div>
+    </header>
+
+    <nav>
+      <div id = "cont_nav">
+          <a href="../index.html"><div class = "elt"> Plantes <br/> d'extérieur </div></a>
+          <a href="../index.html"><div class = "elt"> Terrasses <br/> &amp; Balcons </div></a>
+          <a href="../index.html"><div class = "elt"> Plantes <br/> d'intérieur </div></a>
+          <a href="../index.html"><div class = "elt"> Accessoires <br/> &amp; Décoration </div></a>
+          <a href="../index.html" id="promo"><div class = "elt"> Nos <br/> promotions </div></a>
+          <a href="../index.html"><div class = "elt"> Nos <br/> magasins </div></a>
+          <div class = "elt_form">
+            <form method = "post" action = "./resultats_recherche.html">
+              <input type = "search" name="recherche" placeholder="Recherche" size=40 />
+              <input type="submit" value=""/>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+      <div id = "cont_main">
+        <div id="entete">
+          <div><h1> Mon panier </h1></div>
+          <a href="./resultats_recherche.html"><div class="continuer"> <p> Continuer mes achats </p> </div></a>
+        </div>
+
+        <div id="liste">
+          <div>
+            <div><h2> PRODUIT </h2></div>
+            <div class="designation">
+              <div><img src="../src/images/menthe_mini.png" alt="menthe"/></div>
+              <div>
+                <h3> MENTHE VERTE </h3>
+                <p class="stock"> en stock </p>
+                <p> Type de pot : céramique </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div><h2> PU </h2></div>
+            <div class="pu"><p> 29€ </p></div>
+          </div>
+
+          <div>
+            <div><h2> QUANTITE </h2></div>
+            <div><input type="number" name="qte" min="1" max="20" step="1" /></div>
+            <div class="supprimer"><img src="../src/images/garbage.png" alt="menthe"/> Supprimer </div>
+          </div>
+
+          <div>
+            <div><h2 class="prix_ttc"> PRIX TTC </h2></div>
+            <div class="ttc">29€</div>
+          </div>
+        </div>
+
+        <div id="recap">
+          <div>
+            <h2> RECAPITULATIF </h2>
+          </div>
+          <div>
+            <div><h3>Sous-total</h3></div>
+            <div><p>29€</p></div>
+          </div>
+          <div>
+            <div><h3>Livraison</h3></div>
+            <div class="offerte"><p>offerte</p></div>
+          </div>
+          <div>
+            <div><h3>TOTAL</h3></div>
+            <div class="total"><p>29€</p></div>
+          </div>
+          <div class="commander">
+            <h2> COMMANDER </h2>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div id = "cont_foo">
+      <div id="avantages">
+        <div class = "elt"><img src="../src/images/plant.png" alt="plante" /><br/> 5000 PLANTES<br/> en direct des producteurs </div>
+        <div class = "elt"><img src="../src/images/guarantee.png" alt="garantie" /><br/> VOS PLANTES GARANTIES<br/> 1 an </div>
+        <div class = "elt"><img src="../src/images/fresh.png" alt="emballage" /><br/> EMBALLAGE FRAICHEUR<br/> pour chaque article </div>
+        <div class = "elt"><img src="../src/images/card.png" alt="paiement" /><br/> PAIEMENT SÉCURISÉ<br/> 3x sans frais </div>
+        <div class = "elt"><img src="../src/images/delivery.png" alt="livraison" /><br/> LIVRAISON OFFERTE<br/> à partir de 300€ </div>
+      </div>
+      <div id="infos">
+        <div class = "elt"> <p class="categorie">SERVICES JOLIFLOR</p><br/>
+                  <p>Moyens de paiement</p>
+                  <p>Modes de livraison</p>
+                  <p>Vos garanties</p>
+        </div>
+        <div class = "elt"> <p class="categorie">SERVICE CLIENT</p><br/>
+                  <p><img src="../src/images/support.png" alt="support" />
+                  Service client gratuit<br/>
+                  0800 001 002<br/>
+                  Lun-Sam 8h-19h
+                  </p>
+
+                  <p><img src="../src/images/mail.png" alt="mail" />Contactez-nous</p>
+        </div>
+        <div class = "elt"> <p class="categorie">AIDE</p><br/>
+                  <p>Questions fréquentes</p>
+                  <a href="./qui_sommes_nous.html"><p>Qui sommes-nous ?</p></a>
+                  <a href="./details_techniques.html"><p>Détails techniques</p></a>
+        </div>
+      </div>
+      <div id="cgv">
+        <div class = "elt"> Mentions légales | Protection des données |CGV  </div>
+        <div class = "elt"> Retrouvez-nous sur :<br/><br/>
+                  <img src="../src/images/facebook.png" alt="facebook" />
+                  <img src="../src/images/twitter.png" alt="twitter" />
+                  <img src="../src/images/google.png" alt="google" />
+                  <img src="../src/images/pinterest.png" alt="pinterest" />
+                  <img src="../src/images/instagram.png" alt="instagram" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

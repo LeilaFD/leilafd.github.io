@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Leila Fallourd">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="stylesheet" href="../css/details_techniques.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet"> <!-- police "Joliflor" -->
+    <title> Détails techniques </title>
+  </head>
+	<body>
+	<div id = "cont_body">
+		<header>
+			<div id = "cont_head">
+		  		<div class = "elt"><a href="../index.html"> <span id="nom_enseigne">Joliflor</span></a> UN PAS <span id="jeu_mot">VERS</span> LA NATURE </div>
+		  		<div class = "elt"><img src="../src/images/avatar.png" alt="avatar" /><br/> Mon compte </div>
+		  		<a href="./panier.html"><div class = "elt"><img src="../src/images/shop.png" alt="panier" /><br/> Mon panier </div></a>
+		  	</div>
+		</header>
+
+		<nav>
+		 	<div id = "cont_nav">
+		  		<a href="../index.html"><div class = "elt"> Plantes <br/> d'extérieur </div></a>
+		  		<a href="../index.html"><div class = "elt"> Terrasses <br/> &amp; Balcons </div></a>
+		  		<a href="../index.html"><div class = "elt"> Plantes <br/> d'intérieur </div></a>
+		  		<a href="../index.html"><div class = "elt"> Accessoires <br/> &amp; Décoration </div></a>
+		  		<a href="../index.html" id="promo"><div class = "elt"> Nos <br/> promotions </div></a>
+		  		<a href="../index.html"><div class = "elt"> Nos <br/> magasins </div></a>
+		  		<div class = "elt_form">
+		  			<form method = "post" action = "./resultats_recherche.html">
+		  				<input type = "search" name="recherche" placeholder="Recherche" size=40 />
+		  				<input type="submit" value=""/>
+		  			</form>
+		  		</div>
+		  	</div>
+		</nav>
+
+		<main>
+			<h1> Maquette d'une jardinerie en ligne </h1>
+			<h2> - Détails techniques du projet - </h2><br/>
+			<div id = "cont_main">
+				<h3> Consultation des différentes pages demandées: </h3>
+				<p>La page d'accueil est le point d'entrée du site. On peut y revenir à tout moment en cliquant sur "JOLIFLOR".</p>
+				<p> La page de résultats de recherche est accessible à partir de l'icone loupe du champ de recherche situé en haut des pages. </p>
+				<p> La page de description d'un produit est accessible à partir des boutons "en savoir plus" de la page de résultats de recherche. </p>
+				<p> La page panier est accessible à partir de l'icone panier en haut a droite ou à partir des boutons "ajouter" de la page de résultats de recherche. </p>
+				<p> La page "qui sommes-nous ?" et la page "détails techniques" sont accessible depuis les liens situés dans le footer. </p><br/>
+				
+				<h3> Méthode de travail: </h3>
+				<p> Nous avons commencé par dessiner sur papier ce que nous voulions obtenir avant de commencer à programmer. <br/>
+				Une fois ceci fait nous avons d'abord codé les parties communes à toutes les pages : header, nav, footer accompagné de leur layout.css. <br/>
+				De cette façon nous pouvions ensuite programmer le contenu des différentes pages en partant de la même structure. </p><br/>
+
+				<h3> Mise en page: </h3>
+				<p> Utilisation du positionnement Flexbox. Cette méthode de positionnement apparue récemment permet de placer des blocs (d'où l'utilisation de nombreuses &lt;div>) dans leur "conteneurs" grâce à ses différentes propriétés. </p><br/>
+
+				<h3> Responsivité: </h3>
+				<p> Le comportement responsive des pages a été établi en utilisant les outils de développement des différents navigateurs permettant de simuler des tailles d'appareils de types smartphone ou tablette.<br/>
+				En réduisant progressivement la largeur d'écran on pouvait repérer la taille à partir de laquelle le contenu devenait difficilement lisible. <br/>
+				On posait donc une media query permettant de modifier les marges ou le positionnement des blocs pour rendre le contenu lisible à nouveau. </p><br/>
+
+				<h3> Images: </h3>
+				<p> Les photos du site ont été prises sur pixabay.com. <q> Toutes les images et vidéos de Pixabay sont libres de droit et publiées sous licence Creative Commons CC0. Vous pouvez les télécharger, les modifier, les distribuer et les utiliser gratuitement à votre gré, y compris pour tout usage commercial. Aucune attribution n'est demandée </q>. </p>
+				<p> Les icones utilisées viennent de flaticon.com, qui fournit des icones vectorielles pour un usage personnel ou commercial.</p>
+			</div>
+		</main>
+	</div>
+	<footer>
+		<div id = "cont_foo">
+			<div id="avantages">
+				<div class = "elt"><img src="../src/images/plant.png" alt="plante" /><br/> 5000 PLANTES<br/> en direct des producteurs </div>
+				<div class = "elt"><img src="../src/images/guarantee.png" alt="garantie" /><br/> VOS PLANTES GARANTIES<br/> 1 an </div>
+				<div class = "elt"><img src="../src/images/fresh.png" alt="emballage" /><br/> EMBALLAGE FRAICHEUR<br/> pour chaque article </div>
+				<div class = "elt"><img src="../src/images/card.png" alt="paiement" /><br/> PAIEMENT SÉCURISÉ<br/> 3x sans frais </div>
+				<div class = "elt"><img src="../src/images/delivery.png" alt="livraison" /><br/> LIVRAISON OFFERTE<br/> à partir de 300€ </div>
+			</div>
+			<div id="infos">
+				<div class = "elt"> <p class="categorie">SERVICES JOLIFLOR</p><br/>
+									<p>Moyens de paiement</p>
+									<p>Modes de livraison</p>
+									<p>Vos garanties</p>
+				</div>
+				<div class = "elt"> <p class="categorie">SERVICE CLIENT</p><br/>
+									<p><img src="../src/images/support.png" alt="support" />
+									Service client gratuit<br/>
+									0800 001 002<br/>
+									Lun-Sam 8h-19h
+									</p>
+
+									<p><img src="../src/images/mail.png" alt="mail" />Contactez-nous</p>
+				</div>
+				<div class = "elt"> <p class="categorie">AIDE</p><br/>
+									<p>Questions fréquentes</p>
+									<a href="./qui_sommes_nous.html"><p>Qui sommes-nous ?</p></a>
+									<a href="../index.html"><p>Détails techniques</p></a>
+				</div>
+			</div>
+			<div id="cgv">
+				<div class = "elt"> Mentions légales | Protection des données |CGV  </div>
+				<div class = "elt"> Retrouvez-nous sur :<br/><br/>
+									<img src="../src/images/facebook.png" alt="facebook" />
+									<img src="../src/images/twitter.png" alt="twitter" />
+									<img src="../src/images/google.png" alt="google" />
+									<img src="../src/images/pinterest.png" alt="pinterest" />
+									<img src="../src/images/instagram.png" alt="instagram" />
+				</div>
+			</div>
+		</div>
+	</footer>
+	</body>
+</html>

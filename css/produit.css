@@ -1,0 +1,124 @@
+/*
+  gris foncé: #606060;
+  gris clair : #A0A0A0;
+  gris tres clair :#E0E0E0;
+  vert : #009900;
+  vert tres clair:#DBEEDB;
+  framboise: #CC0066;
+  marron:#996633;
+*/
+
+
+/********************* main ************************/
+#resume{
+  display:flex;
+}
+
+figure{
+  margin-top: 0;
+}
+
+#resume div:nth-child(2){
+  flex:1;
+  min-width: 200px;
+}
+
+.new_prix, .note{
+  font-size: 1.4em;
+  color:#CC0066;
+}
+
+.old_prix{
+  color:#606060;
+  text-decoration: line-through;
+}
+
+.stock{
+  color:#009900;
+}
+
+span{
+  margin-right: 20px;
+}
+
+select{
+  border: 1px #E0E0E0 solid;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.ajouter{
+  min-width: 100px;
+  background-color: #DBEEDB;
+  border: none;
+  border-radius: 4px;
+  height: 40%;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ajouter img{
+  padding-top: 40%;
+}
+
+.ajouter:hover{
+  border: 1px #009900 solid;
+}
+
+#resume a, #resume a:visited{
+  font-size: 1em;
+  color: #606060;
+  text-decoration: none;
+}
+
+#details{
+  margin-top: 40px;
+  margin-left: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-left: 1px #E0E0E0 solid;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+img[alt=Menthe_verte]{
+  /* comportement responsive */
+  max-width: 100%;
+  height: auto; 
+}
+
+
+/******************** responsive ********************/
+
+@media all and (max-width: 1260px){
+  #resume{
+    flex-wrap: wrap;
+  }
+  .ajouter{
+    height: 100%;
+    margin-left: 40px;
+  }
+}
+@media all and (max-width: 866px){
+  #resume div:nth-child(2){
+    flex:none;
+    margin-left: 60px;
+  }
+}
+
+@media all and (max-width: 580px){
+  #details{
+    margin-left: 1%;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+  }
+}
+
+@media all and (max-width: 516px){
+  .ajouter{
+    margin-top: 20px;
+  }
+}

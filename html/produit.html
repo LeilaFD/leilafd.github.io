@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="stylesheet" href="../css/produit.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet"> <!-- police "Joliflor" -->
+    <title> Produit : Menthe verte </title>
+  </head>
+  <body>
+  <div id = "cont_body">
+    <header>
+      <div id = "cont_head">
+          <div class = "elt"><a href="../index.html"> <span id="nom_enseigne">Joliflor</span></a> UN PAS <span id="jeu_mot">VERS</span> LA NATURE </div>
+          <div class = "elt"><img src="../src/images/avatar.png" alt="avatar" /><br/> Mon compte </div>
+          <a href="./panier.html"><div class = "elt"><img src="../src/images/shop.png" alt="panier" /><br/> Mon panier </div></a>
+        </div>
+    </header>
+
+    <nav>
+      <div id = "cont_nav">
+          <a href="../index.html"><div class = "elt"> Plantes <br/> d'extérieur </div></a>
+          <a href="../index.html"><div class = "elt"> Terrasses <br/> &amp; Balcons </div></a>
+          <a href="../index.html"><div class = "elt"> Plantes <br/> d'intérieur </div></a>
+          <a href="../index.html"><div class = "elt"> Accessoires <br/> &amp; Décoration </div></a>
+          <a href="../index.html" id="promo"><div class = "elt"> Nos <br/> promotions </div></a>
+          <a href="../index.html"><div class = "elt"> Nos <br/> magasins </div></a>
+          <div class = "elt_form">
+            <form method = "post" action = "./resultats_recherche.html">
+              <input type = "search" name="recherche" placeholder="Recherche" size=40 />
+              <input type="submit" value=""/>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+      
+      <div id = "cont_main">
+        <div id="resume">
+          <div><figure><img src="../src/images/menthe_produit.png" alt="Menthe_verte" /></figure></div>
+          <div>
+            <h1> MENTHE VERTE</h1>
+            <p> Mentha spicata </p>
+            <p> <span class="new_prix">29€</span> <span class="old_prix"> 35€ </span><span class="stock"> en stock </span></p>
+            <form method = "post" action = "produit.html">
+                <label for="pot"> Type de pot : </label>
+                <select id="pot" name="pot">
+                  <option value="Ceramique" selected> Céramique </option>
+                  <option value="terre"> Terre cuite </option>
+                  <option value="aucun"> Aucun </option>
+                </select>
+              </form>
+          </div>  
+          <a href="./panier.html" ><div class="ajouter">
+            <img src="../src/images/shop.png" alt="panier" /><br/><p> Ajouter </p>
+          </div></a>
+        </div>
+
+        <div id="details">
+          <h2> DESCRIPTION </h2>
+            <p>Les menthes forment un genre (Mentha) de plantes herbacées vivaces de la famille des Lamiacées (Labiées), sous-famille des Nepetoideae, tribu des Mentheae, sous-tribu des Menthinae.
+                  Ce genre comprend de nombreuses espèces, dont beaucoup sont cultivées comme plantes aromatiques et condimentaires, ornementales ou médicinales.</p>
+          <h2> USAGE </h2>
+            <p>
+                    <ul>
+                        <li>Boissons : <br>
+                            Utilisée en tisane et en infusion, la feuille de menthe verte a une place de choix dans la culture du Maghreb.
+                            En effet, le fameux thé à la menthe est concocté en laissant infuser du thé vert avec environ 100 feuilles
+                            de menthe fraîche par litre et beaucoup de sucre.</li>
+                        <li>Culinaire : <br>
+                            Les feuilles de menthe en épi sont également utilisées dans de nombreuses applications culinaires,
+                            comme avec des plats à base de viande, des sauces pour le gigot ou le rôti de bœuf (en Grande-Bretagne), des plats asiatiques.</li>
+                        <li>Médicinaux : <br>
+                            En herboristerie, les menthes sont toniques, stimulantes et antispasmodiques. La menthe verte est traditionnellement
+                            utilisée pour ses propriétés aromatiques (toniques, fortifiantes), digestives (combat les lourdeurs, les ballonnements, les gaz)
+                            et antispasmodiques (nervosité, palpitations, crampes).</li>
+                    </ul>
+                </p>
+          <h2> ENTRETIEN </h2>
+            <p>
+              <ul>
+                        <li>On peut cueillir les feuilles selon les besoins, de préférence le matin avant les grandes chaleurs.
+                          Pour avoir 2 récoltes, coupez au ras du sol vers la fin juin puis recommencer en automne. </li>
+                        <li>Pas d’entretien particulier hormis un arrosage suffisant pendant la saison sèche.</li>
+                    </ul>
+                  </p>
+          <h2> AVIS </h2>
+            <h3><span class="note"> 4/5 </span> JeanP de Marne-la-Vallée</h3>
+            <p>Publié le 30 avril 2017</p>
+            <p>Produit livré dans d'excellentes conditions !
+                      <ul>
+                        <li>+ : très odorant</li>
+                        <li>- : le pot pas très solide :/</li>
+                      </ul>
+                    </p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div id = "cont_foo">
+      <div id="avantages">
+        <div class = "elt"><img src="../src/images/plant.png" alt="plante" /><br/> 5000 PLANTES<br/> en direct des producteurs </div>
+        <div class = "elt"><img src="../src/images/guarantee.png" alt="garantie" /><br/> VOS PLANTES GARANTIES<br/> 1 an </div>
+        <div class = "elt"><img src="../src/images/fresh.png" alt="emballage" /><br/> EMBALLAGE FRAICHEUR<br/> pour chaque article </div>
+        <div class = "elt"><img src="../src/images/card.png" alt="paiement" /><br/> PAIEMENT SÉCURISÉ<br/> 3x sans frais </div>
+        <div class = "elt"><img src="../src/images/delivery.png" alt="livraison" /><br/> LIVRAISON OFFERTE<br/> à partir de 300€ </div>
+      </div>
+      <div id="infos">
+        <div class = "elt"> <p class="categorie">SERVICES JOLIFLOR</p><br/>
+                  <p>Moyens de paiement</p>
+                  <p>Modes de livraison</p>
+                  <p>Vos garanties</p>
+        </div>
+        <div class = "elt"> <p class="categorie">SERVICE CLIENT</p><br/>
+                  <p><img src="../src/images/support.png" alt="support" />
+                  Service client gratuit<br/>
+                  0800 001 002<br/>
+                  Lun-Sam 8h-19h
+                  </p>
+
+                  <p><img src="../src/images/mail.png" alt="mail" />Contactez-nous</p>
+        </div>
+        <div class = "elt"> <p class="categorie">AIDE</p><br/>
+                  <p>Questions fréquentes</p>
+                  <a href="./qui_sommes_nous.html"><p>Qui sommes-nous ?</p></a>
+                  <a href="./details_techniques.html"><p>Détails techniques</p></a>
+        </div>
+      </div>
+      <div id="cgv">
+        <div class = "elt"> Mentions légales | Protection des données |CGV  </div>
+        <div class = "elt"> Retrouvez-nous sur :<br/><br/>
+                  <img src="../src/images/facebook.png" alt="facebook" />
+                  <img src="../src/images/twitter.png" alt="twitter" />
+                  <img src="../src/images/google.png" alt="google" />
+                  <img src="../src/images/pinterest.png" alt="pinterest" />
+                  <img src="../src/images/instagram.png" alt="instagram" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
